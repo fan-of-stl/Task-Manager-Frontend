@@ -1,0 +1,8 @@
+<div *ngIf="isAuthenticated; else loginOrRegister">
+    <app-overview></app-overview>
+</div>
+
+<ng-template #loginOrRegister>
+    <app-login></app-login>
+    <app-register></app-register>
+</ng-template>
